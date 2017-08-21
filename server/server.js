@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 
 app.get('/api/getMethod',handlers.handleData.getData);
-app.post('/api/addMethod',handlers.handleData.addData);
+app.post('/api/postmethod',handlers.handleData.addData);
   
 
 app.listen(process.env.PORT || 8000);
