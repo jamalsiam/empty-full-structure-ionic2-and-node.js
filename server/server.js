@@ -5,7 +5,7 @@ var session = require('express-session');
 var handlers = require('./handlers.js')
 
 //middleware
-app.use(express.static(__dirname + '/../client/dist'));
+app.use(express.static(__dirname + '/../client/www'));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
